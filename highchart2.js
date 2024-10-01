@@ -54,7 +54,7 @@ const CustomVis = ({ fields, data, pivots, config }) => {
           { name: 'pat.Month.currentDate', label: 'Current Date' },   // Dimension for Current Date
         ],
         pivots: [
-          { name: 'pat.Month.currentDate' }  // Adding Current Date as a pivot
+          { name: 'pat.currentDate.Month' }  // Adding Current Date as a pivot
         ],
       }}
       data={nestedData}
