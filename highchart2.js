@@ -46,15 +46,15 @@ const CustomVis = ({ fields, data, pivots, config }) => {
       height={500}
       fields={{
         measures: [
-          { name: NESTED_DATA_KEY, label: 'Hcp First Rx Count' }, // Updated label
-          { name: 'patStarts', label: 'Pat Starts' },  // Adding another measure for Pat Starts
+          { name: Hcp_First_Rx.Count, label: 'Hcp First Rx Count' }, // Updated label
+          { name: 'pat.Starts', label: 'Pat Starts' },  // Adding another measure for Pat Starts
         ],
         dimensions: [
-          { name: 'patTerritory', label: 'Pat Territory' },  // Dimension for Pat Territory
-          { name: 'currentDate', label: 'Current Date' },   // Dimension for Current Date
+          { name: 'pat.Territory', label: 'Pat Territory' },  // Dimension for Pat Territory
+          { name: 'pat.Month.currentDate', label: 'Current Date' },   // Dimension for Current Date
         ],
         pivots: [
-          { name: 'currentDate' }  // Adding Current Date as a pivot
+          { name: 'pat.Month.currentDate' }  // Adding Current Date as a pivot
         ],
       }}
       data={nestedData}
