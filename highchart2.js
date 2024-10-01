@@ -69,7 +69,7 @@ export const MyReactApp = () => {
 
   return (
     <DataProvider sdk={core40SDK}>
-      <Query query='EFOLREMqIDEje23pVt5sIW'>
+      <Query query='ZqfRAo273GWkiTBPXMFhox'>
         <CustomVis />
       </Query>
     </DataProvider>
